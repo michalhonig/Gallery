@@ -3,54 +3,62 @@
   list-style:none;
 }
 
-
 .gallery li {
-  display:inline-block;
   width:470px;
-  vertical-align: top;
   padding-left: 10px;
   padding-bottom: 10px;
   float: left;
 }
 
-.container {
+.container-of-Gallery-item {
   background-color: rgb(230,230,230);
-  width: inherit;
-  height: 424px;
-  position: relative;
+  display: inline-block;
+  padding: 30px 83px 90px 83px;
 }
 
-div {
+.icons-container {
+  display: block;
+  background-color: rgba(155, 214, 244, 0.29);
+  visibility: hidden;
+}
+
+.icons-container i{
+  width: 49%;
+  text-align: center;
+  border-right: 1px solid #000000;
+}
+
+.icons-container i:last-child {
+  border-right: 0px solid #000000;
+}
+
+.inner-container-item {
   width: 304px;
   height: 304px;
   background-color: #FFF;
-  position: absolute;
-  top: 30px;
-  left: 88px;
-  right: 88px;
-  bottom: 90px;
-  box-shadow: inset 0 0 3px #000000;
+  box-shadow: inset 0 0 4px #000000;
+  position: relative;
 }
 
 img {
   width: 100%;
   max-width: 300px;
   max-height: 300px;
+  display: block;
   position: absolute;
   top: 2px;
   left: 2px;
-  display: block;
-  vertical-align: top;
-
 }
 
 figcaption {
   color: red;
   text-align: center;
   display:block;
-  width: inherit;
-  position: absolute;
-  top: 350px;
+  width: 100%;
 }
 
 
+li:hover .icons-container,figure.icons-always-on .icons-container{
+  visibility: visible;
+
+}
