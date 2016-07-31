@@ -1,9 +1,9 @@
-.gallery {
+.gallery, #gallery_js {
   max-width:1440px;
   list-style:none;
 }
 
-.gallery li {
+.gallery li, #gallery_js li {
   width:470px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -11,7 +11,7 @@
   display: inline-block;
 }
 
-.gallery li >a{
+.gallery li >a, #gallery_js li>a{
   display: inline-block;
 }
 
